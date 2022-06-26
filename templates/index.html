@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Familiares</title>
+</head>
+<body>
+    <div>
+        <hr>
+        {% for familiar in familiares %}
+            <b> Nombre: </b> {{ familiar.nombre_completo }}
+            <br>
+            <b> Cedula: </b> {{ familiar.cedula_identidad}}
+            <br>
+            <b> Fecha Nacimiento: </b> {{ familiar.fecha_nacimiento }}
+            <hr>
+        {% endfor %}
+    </div>
+</body>
+</html>
